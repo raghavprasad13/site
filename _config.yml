@@ -1,12 +1,12 @@
 # Site settings
 title: Raghav Prasad
-description: A blog about me
+description: A website about me
 baseurl: "/site" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Raghav Prasad
-user_description: An aspiring software developer with a thirst for knowledge and a positive outlook on life
+user_description: An aspiring computer scientist with a thirst for knowledge and a positive outlook on life
 # user_title: Software Developer
 email: raghavprasad13@gmail.com
 twitter_username: lorem_ipsum
