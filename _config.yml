@@ -1,20 +1,59 @@
+# Welcome to Jekyll!
+#
+
 # Site settings
 title: Raghav Prasad
-description: A website about me
-baseurl: "/site" # the subpath of your site, e.g. /blog
-# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
-
-# User settings
-username: Raghav Prasad
-user_description: An aspiring computer scientist with a thirst for knowledge and a positive outlook on life
-# user_title: Software Developer
+description: |
+  "The secret of getting ahead is getting started"
+        -- Mark Twain
+owner: Raghav Prasad # or company name
+first_published: 2018 # if migrating another site, the year of your first publish
 email: raghavprasad13@gmail.com
-twitter_username: lorem_ipsum
-github_username:  lorem_ipsum
-gplus_username:  lorem_ipsum
+baseurl: "" # the subpath of your site, e.g. /blog
+# url: "http://yourdomain.com" # the base hostname & protocol for your site
+social:
+  # twitter: https://twitter.com/<username>
+  email: mailto:raghavprasad13@gmail.com
+  github: https://github.com/raghavprasad13
+  linkedin-square: https://www.linkedin.com/in/raghav-prasad-857383166/
+  facebook-official: https://www.facebook.com/raghavprasad131297?ref=bookmarks
+  # google-plus-square: https://plus.google.com/u/0/+<username>
+  #email: /contact/
+  #flickr:
+  #instagram:
+  #youtube-square:
+  #spotify:
+  #stack-overflow:
+  #vimeo:
+  #reddit:
+  #stubleupon:
+  #delicious:
+  #pied-piper:
+  #digg:
+  #soundcloud:
+  #deviantart:
+  #angellist:
+  #tumblr-square:
+  #stackexchange:
+  #weibo:
+  #trello:
+  #foursquare:
+  #linux:
+  #bitbucket-square:
+  #vk:
+  #slack:
+  #vine:
+  #weixin:
+  #yelp:
+  #skyatlas:
+  #leanpub:
+  #connectdevelop:
+  #ils:
+  #forumbee:
+  #tripadvisor:
+  #amazon:
 
-# Google-analytics
-google-analytics:
-  id: "UA-122821580-1"
-
-exclude: ['package.json', 'src' , 'node_modules']
+# Build settings
+markdown: kramdown
+#sass:
+#  style: compressed
