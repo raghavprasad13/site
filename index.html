@@ -5,13 +5,13 @@ layout: landing
       <!-- Header -->
 <header id="header" class="alt">
   <h1><a href="/site/index.html">Raghav Prasad</a></h1>
-  <nav id="nav">
+  <!-- <nav id="nav">
     <ul>
       <li class="special">
         <a href="#menu" class="menuToggle"><span>My Projects</span></a>
         <div id="menu">
           <ul>
-            <!-- <li><a href="index.html">Home</a></li> -->
+            <li><a href="index.html">Home</a></li>
             
             
             <li><a href="GLMC.html">GLMC</a></li>
@@ -23,7 +23,7 @@ layout: landing
             <li><a href="gaip.html">Summer in NUS</a></li>
             <li><a href="meme_sent_analysis.html">Meme Sentiment Analysis</a></li>
             <li><a href="cog_neuro_AD.html">Graph Theoretical Analysis of AD</a></li>
-            <!-- <li><a href="/site/generic.html">Generic</a></li>
+            <li><a href="/site/generic.html">Generic</a></li>
             
             
             
@@ -38,11 +38,11 @@ layout: landing
             <li><a href="#">Log In</a></li>
             <li><a href="/site/feed.xml"
                    class="icon fa-feed"> RSS Feed</a></li>
- -->          </ul>
+          </ul>
         </div>
       </li>
     </ul>
-  </nav>
+  </nav> -->
 </header>
 
 <head>
@@ -105,13 +105,15 @@ layout: landing
 					<section id="banner">
 						<div class="inner">
 							<h2>{{ site.title }}</h2>
-							<p>{{ site.description | markdownify }}</p>
+							<div style="padding: 0 7em;">
+								<p>{{ site.description | markdownify }}</p>
+							</div>
 							<!-- <a href="{{site.baseurl}}/" onmouseover=""><u>{{ site.recursive_description | markdownify }}</u></a> -->
 							<ul class="actions">
-								<li><a target="_blank" href="./docs/CV.pdf" class="button special">Curriculum Vitae</a></li>
+								<li><a target="_blank" href="./docs/Raghav_MS_CV.pdf" class="button special">Curriculum Vitae</a></li>
 							</ul>
 						</div>
-						<a href="#two" class="more scrolly"></a>
+						<a href="#two" class="more scrolly">My Projects</a>
 					</section>
 
 				<!-- One -->
@@ -132,27 +134,59 @@ layout: landing
 							</ul>
 						</div>
 					</section> -->
-
+					
 				<!-- Two -->
 					<section id="two" class="wrapper alt style2">
+						<section class="spotlight">
+							<div class="image"><img src="images/unity_logo.jpg" alt="" /></div><div class="content">
+								<h2>Multimodal VR system for small animals</h2>
+								<h4>Virtual reality and Cognitive Neuroscience</h4>
+								<p>A custom VR system to conduct non-invasive neuroscientific experiments on small animals, built using Unity</p>
+								<a href="ucla_vr.html" target="_blank" class="button">Read more</a>
+							</div>
+						</section>
 						<section class="spotlight">
 							<div class="image"><img src="images/brain.png" alt="" /></div><div class="content">
 								<h2>Analysis of brain networks</h2>
 								<h4>Cognitive Neuroscience and Graph Theory</h4>
 								<p>A data driven graph theoretical analysis of functional brain networks to track the progression of Alzheimer's Disease</p>
-								<a href="https://raghavprasad13.github.io/site/cog_neuro_AD.html" class="button">Read more</a>
+								<a href="cog_neuro_AD.html" class="button">Read more</a>
 							</div>
 						</section>
 						<section class="spotlight">
+							<div class="image"><img src="images/meme_sentiment_analysis.jpeg" alt="" /></div><div class="content">
+								<h2>Meme Sentiment Analysis</h2>
+								<h4>Deep Learning and Natural Language Processing</h4>
+								<p>A multimodal deep learning approach applied to a sentiment classification task</p>
+								<a href="meme_sent_analysis.html" class="button">Read more</a>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/discourse.jpg" alt="" /></div><div class="content">
+								<h2>Discourse Topic Organizer Plugin</h2>
+								<h4>Web development</h4>
+								<p>Building a plugin to organize topics in a <a href="https://www.discourse.org/">Discourse</a> instance to use it as a Learning Management System</p>
+								<a href="hbcse.html" class="button">Read more</a>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/economic_data_analysis.png" alt="" /></div><div class="content">
+								<h2>Economic time series data analysis</h2>
+								<h4>Economics and Data Analysis</h4>
+								<p>A time series data analysis for the state of Goa, India, across various economic sectors</p>
+								<a href="economic_data_analysis.html" class="button">Read more</a>
+							</div>
+						</section>
+						<!-- <section class="spotlight">
 							<div class="image"><img src="images/dojma.png" alt="" /></div><div class="content">
 								<h2>DoJMA App</h2>
 								<h4>iOS App Development using Swift</h4>
 								<p>iOS app for the Department of Journalism and Media Affairs. An all-in-one news and utility app for BITS Goa</p>
 								<a href="https://github.com/MobileApplicationsClub/DoJMA-iOS" target="_blank" class="button" style="margin-right: 40px">Check it out on GitHub</a>
-								<!-- <br></br> -->
-								<!-- <a href="https://itunes.apple.com/in/app/dojma/id1437425090?mt=8" target="_blank" class="button special">Get the app</a> -->
+								<br></br>
+								<a href="https://itunes.apple.com/in/app/dojma/id1437425090?mt=8" target="_blank" class="button special">Get the app</a>
 							</div>
-						</section>
+						</section> -->
 						<!-- <section class="spotlight">
 							<div class="image"><img src="images/ssp_logo.png" alt="" /></div><div class="content">
 								<h2>Augue eleifend aliquet<br />
@@ -166,10 +200,68 @@ layout: landing
 					<section id="three" class="wrapper style3 special">
 						<div class="inner">
 							<header class="major">
-								<h2>Some of my other projects</h2>
-								<p>#deeplearning #nlp #datascience #webd #opensource
+								<h2>Other Projects</h2>
+								<p>#deeplearning #nlp #datascience #ios #opensource
 								</p>
-								<a href="#menu" class="button special"><span>Check them out</span></a>
+								<style>
+									.collapsible {
+										/* @include vendor('appearance', 'none');
+										@include vendor('transition', ('background-color #{_duration(transitions)} ease-in-out', 'color #{_duration(transitions)} ease-in-out')); */
+										background-color: #ed4a33;
+										border-radius: 3px;
+										border: 0;
+										box-shadow: none !important;
+										color: _palette(accent6, fg-bold) !important;
+										cursor: pointer;
+										display: inline-block;
+										font-size: 0.8em;
+										font-weight: _font(weight-bold);
+										height: 3.125em;
+										letter-spacing: _size(letter-spacing-alt);
+										line-height: 3.125em;
+										padding: 0 2.75em;
+										text-align: center;
+										text-decoration: none;
+										text-transform: uppercase;
+										white-space: nowrap;
+										overflow: hidden;
+										text-overflow: ellipsis;
+									}
+									
+									.active, .collapsible:hover {
+									  background-color: #555;
+									}
+									
+									.collapsiblecontent {
+									  /* padding: 0 18px; */
+									  max-height: 0;
+									  overflow: hidden;
+									  transition: max-height 0.4s ease-out;
+									  background-color: #f1f1f1;
+									}
+								</style>
+
+								<button class="collapsible">Check them out</button>
+
+								<script>
+									var coll = document.getElementsByClassName("collapsible");
+									var i;
+									
+									for (i = 0; i < coll.length; i++) {
+									  coll[i].addEventListener("click", function() {
+										this.classList.toggle("active");
+										var content = document.getElementById("collapse");
+										if (content.style.maxHeight){
+										  content.style.maxHeight = null;
+										} else {
+										  content.style.maxHeight = content.scrollHeight + "px";
+										  content.scrollIntoView();
+										} 
+									  });
+									}
+								</script> 
+
+								
 								<!-- <h2>Accumsan mus tortor nunc aliquet</h2> -->
 								<!-- <p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
 								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p> -->
@@ -203,12 +295,41 @@ layout: landing
 						</div>
 					</section>
 
+					<div id="collapse" class="collapsiblecontent">
+						<section id="four" class="wrapper alt style2">
+							<section class="spotlight">
+								<div class="image"><img src="images/nus.jpg" alt="" /></div><div class="content">
+									<h2>A summer at NUS</h2>
+									<h4>Machine Learning and Big Data Management</h4>
+									<p>Sentiment analysis using ANN and non-ANN methods</p>
+									<a href="gaip.html" target="_blank" class="button">Read more</a>
+								</div>
+							</section>
+							<section class="spotlight">
+								<div class="image"><img src="images/dojma.png" alt="" /></div><div class="content">
+									<h2>DoJMA App</h2>
+									<h4>iOS App Development using Swift</h4>
+									<p>iOS app for the Department of Journalism and Media Affairs. An all-in-one news and utility app for BITS Goa</p>
+									<a href="https://github.com/MobileApplicationsClub/DoJMA-iOS" target="_blank" class="button" style="margin-right: 40px">Check it out on GitHub</a>
+									<!-- <br></br>
+									<a href="https://itunes.apple.com/in/app/dojma/id1437425090?mt=8" target="_blank" class="button special">Get the app</a> -->
+								</div>
+							</section>
+							<!-- <section class="spotlight">
+								<div class="image"><img src="images/ssp_logo.png" alt="" /></div><div class="content">
+									<h2>Augue eleifend aliquet<br />
+									sed condimentum</h2>
+									<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								</div>
+							</section> -->
+						</section>
+					</div>	
 				<!-- CTA -->
 					<section id="cta" class="wrapper style4">
 						<div class="inner">
 							<header>
 								<h2>Get in touch</h2>
-								<p><a target="_blank" href="https://www.facebook.com/prasadraghav13">Facebook</a> | <a target="_blank" href="https://www.linkedin.com/in/raghav-prasad-857383166/">LinkedIn</a> | <a href="mailto:raghavprasad13@gmail.com">Email</a><p>
+								<p><a target="_blank" href="https://www.facebook.com/prasadraghav13">Facebook</a> | <a target="_blank" href="https://www.linkedin.com/in/raghavprasad13/">LinkedIn</a> | <a href="mailto:raghavprasad13@gmail.com">Email</a><p>
 							</header>
 							<!-- <ul class="actions vertical">
 								<li><a href="#" class="button fit special">Activate</a></li>
