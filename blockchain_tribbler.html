@@ -16,14 +16,12 @@ background_image: ucla_vr.png
 			  I had already made <a href="/site/tribbler.html" >Tribbler</a> based on a somewhat traditional approach to distributed systems: using a logical clock synchronized across all distributed data stores. This project aimed to explore the facets of blockchain through a re-implementation of Tribbler using blockchain.
 		  </p>
 		  <header>
-			  <h4>How is Tirbbler on blockchain different?</h4>
+			  <h4>How is Tribbler on blockchain different?</h4>
 		  </header>
 		  <p>
-			  The basic implementation of Tribbler is based on a key-value storage service called via RPCs.<br>
-			  <b>Scalability: </b>In order to ensure scalability, the key-value store was distributed over multiple backends. This ensures that requests to Tribbler aren't bottlenecked by the existence of a mere single backend storing all the data. <br>
-			  <b>Robustness: </b>The system is robust to hardware (backend) failures. Whenever a backend fails, the system detects this failure and migrates all the data in that backend to another one. This ensures zero data loss and the end user is oblivious to the backend failure, ensuring smooth, uninterrupted service. <br>
-			  <b>Causal consistency: </b>The system needs to necessarily maintain <i>causal consistency</i>. Causal consistency will ensure things such as replies to tribs (think tweets) appearing in a logical order. Causal consistency is maintained using a subsystem of <i>keepers</i> whose responsibility is to maintain a synchronized logical clock across the backends. Additionally, they detect backend failures and facilitate data migration. <br><br>
-			  This system is built to withstand up to 297 backend failures and 9 keeper failures without any data loss!
+			  The main difference between the original Tribbler and the blockchain implementation is that the duties of data storage and synchronization is offloaded to the blockchain. I experimented with different proportions of computation between the frontend and backend to try and reduce <i>gas fees</i><br>
+			  I found that we were able to offload a lot of the original Tribbler functionality to the frontend and thus minimized computation on the blockchain, thereby drastically reducing gas fees. <br>
+			  Moreover, I was able to gain a deeper understanding of the blockchain and the behavior of dApps.
 		  </p>
 
 		  <a href="https://github.com/ucsd-cse223b-sp22/tribbler" target="_blank" class="button special" style="margin-right: 450px; margin-left: 450px; display: inline-block; text-align: center">Check it out</a>
