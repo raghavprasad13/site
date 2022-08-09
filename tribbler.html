@@ -22,10 +22,10 @@ background_image: twitter_logo.png
 		The basic implementation of Tribbler is based on a key-value storage service called via RPCs.<br>
 		<b>Scalability: </b>In order to ensure scalability, the key-value store was distributed over multiple backends. This ensures that requests to Tribbler aren't bottlenecked by the existence of a mere single backend storing all the data. <br>
 		<b>Robustness: </b>The system is robust to hardware (backend) failures. Whenever a backend fails, the system detects this failure and migrates all the data in that backend to another one. This ensures zero data loss and the end user is oblivious to the backend failure, ensuring smooth, uninterrupted service. <br>
-		<b>Causal consistency: </b>The system needs to necessarily maintain <i>causal consistency</i>. Causal consistency will ensure things such as replies to tribs (think tweets) appearring in a logical order. Causal consistency is maintained using a subsystem of <i>keepers</i> whose responsibility is to maintain a synchronized logical clock across the backends. Additionally, they detect backend failures and facilitate data migration. <br>
+		<b>Causal consistency: </b>The system needs to necessarily maintain <i>causal consistency</i>. Causal consistency will ensure things such as replies to tribs (think tweets) appearing in a logical order. Causal consistency is maintained using a subsystem of <i>keepers</i> whose responsibility is to maintain a synchronized logical clock across the backends. Additionally, they detect backend failures and facilitate data migration. <br><br>
 		This system is built to withstand up to 297 backend failures and 9 keeper failures without any data loss!
 	</p>
 
-	<a href="https://github.com/ucsd-cse223b-sp22/tribbler" target="_blank" class="button">Check it out</a>
+	<a href="https://github.com/ucsd-cse223b-sp22/tribbler" target="_blank" class="button special" style="margin-right: 450px; margin-left: 450px; display: inline-block; text-align: center">Check it out</a>
 
 </section>
